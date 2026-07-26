@@ -336,7 +336,6 @@ return {
 3. Save changes and restart Neovim for `lazy.nvim` to install
 4. Verify plugin install and installed languages
     1. `:checkhealth nvim-treesitter`
-    2. 
 5. Double check that the [requirements](https://github.com/nvim-treesitter/nvim-treesitter#requirements) are installed
     1. You may likely need to install [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md)
 ### What does this do
