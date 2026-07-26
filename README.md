@@ -126,6 +126,7 @@ Here is what this `init.lua` provides.
 `vim.opt.clipboard = "unnamedplus"` will set nvim to use the system keyboard instead of it's default registers for the clipboard. 
 
 **Keymaps**
+
 `<space><space>x` - execute the entire file (normal mode)
 `<space>x` - execute the current line (normal mode)
 `<space>x` - execute highlighted code (visual mode)
@@ -139,6 +140,7 @@ I also have some personal keymaps for Oil, terminal, and turning off search high
 The Neovim help IS FANTASTIC, be sure to exploit it constantly.
 
 For details execute these commands from within Neovim:
+
 `:h option-list` - provides a brief list of all options
 `:h options` - an overview of options
 
@@ -178,6 +180,7 @@ It's notable that by by placing `ftplugins` in `/after` you can override the glo
 
 
 **References**
+
 - More details from TJ: [YouTube - Configure Neovim Options](https://www.youtube.com/watch?v=F1CQVXA5gf0&list=PLep05UYkc6wTyBe7kPjQFWVXTlhKeQejM&index=6)
 - [neovim - ftplugin overrule](https://neovim.io/doc/user/filetype/#ftplugin-overrule)
 - [neovim - ftplugin](https://neovim.io/doc/user/filetype/#_2.-filetype-plugin)
