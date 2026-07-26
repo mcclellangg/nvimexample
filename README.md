@@ -2,9 +2,9 @@
 
 These instructions were heavily influenced by [TJ DeVries - Adevent of Neovim](https://www.youtube.com/playlist?list=PLep05UYkc6wTyBe7kPjQFWVXTlhKeQejM) series on YouTube. If you are interested in Neovim want to learn more about it (in depth) I suggest you start by creating your own config, and watching along with his series.
 
-TJ is an excellent teacher and does a great job at breaking down the most important parts of Neovim and showing you what you need to get started.
+TJ is an excellent teacher and does a great job at breaking down the most important parts of Neovim and to get you started.
 
-Creating these instructions helped me cement my learnings from the series, and provide me with a config that serves as a solid starting point as I continue to experiment and learn with Neovim.
+Creating these instructions helped cement my learnings from the series. This config serves as a solid starting point as I experiment with Neovim.
 
 # Instructions
 
@@ -25,6 +25,7 @@ I have not yet tried it on Windows myself.
     1. `alias -s nvex="NVIM_APPNAME=nvimexample nvim"` 
 
  ❗ Additional instructions assume you will be opening Neovim with your new appname via one of these methods:
+
  4. `nvex` - alias
  5. `NVIM_APPNAME=nvimexample nvim` - manual execution
  
