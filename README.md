@@ -1,6 +1,6 @@
 # Overview 
 
-These instructions were heavily influenced by [TJ DeVries - Adevent of Neovim](https://www.youtube.com/playlist?list=PLep05UYkc6wTyBe7kPjQFWVXTlhKeQejM) series on YouTube. If you are interested in Neovim want to learn more about it (in depth) I suggest you start by creating your own config, and watching along with his series.
+These instructions were heavily influenced by [TJ DeVries - Adevent of Neovim](https://www.youtube.com/playlist?list=PLep05UYkc6wTyBe7kPjQFWVXTlhKeQejM) series on YouTube. If you are interested in Neovim and want to learn more about it (in depth) I suggest you start by creating your own config, and watching along with his series.
 
 TJ is an excellent teacher and does a great job at breaking down Neovim into more digestable chunks in order to help get you started.
 
@@ -29,7 +29,7 @@ I have not yet tried it on Windows myself.
  4. `nvex` - alias
  5. `NVIM_APPNAME=nvimexample nvim` - manual execution
  
-If you have never used Neovim before, the [tutor tutorial](https://neovim.io/doc/user/nvim/) is an excellent plate to start.
+If you have never used Neovim before, the [tutor tutorial](https://neovim.io/doc/user/nvim/) is an excellent place to start.
 Open Neovim and run `:Tutor`.
 
 **References**
