@@ -46,25 +46,39 @@ Open Neovim and run `:Tutor`.
     2. **OR** via your new alias
         1. `nvex init.lua`
 2. Add the following code block `init.lua`
-    1. Update with [gist - Starter config](https://gist.github.com/mcclellangg/524cff56e6495a2f8542178277b402ef)
+    1. Source [gist - Starter config](https://gist.github.com/mcclellangg/524cff56e6495a2f8542178277b402ef)
 
 ```lua
-print("Using: nvimexample/init.lua")
+-- ═══════════════════════════════════════════════════════════════
+-- STARTER CONFIG
+-- Install and enable plugins/language_servers: 
+-- 1. lazy
+-- 2. lua_ls (and maybe oil)
+-- ═══════════════════════════════════════════════════════════════
 
--- Advent of Neovim GREATS
+-- require("config.lazy")
+
+local uv = vim.uv
+print("Using: " .. uv.os_getenv("NVIM_APPNAME"))
+
+-- ==== GREAT Advent of Neovim ====
 vim.opt.clipboard = "unnamedplus"
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("v", "<space>x", ":lua<CR>")
 
--- UI
+vim.keymap.set("n", "<space>nh", "<cmd>noh<CR>")
+
+-- Basic
 vim.opt.linebreak = true
 vim.opt.wrap = true
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.relativenumber = true
 vim.opt.number = true
-vim.api.nvim_set_hl(0, "Comment", { fg = "#FF0000" })
+vim.api.nvim_set_hl(0, "Comment", { fg = "#FF2A54", italic = true })
+vim.opt.scrolloff = 10
+
 
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
@@ -73,6 +87,34 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.hl.on_yank({higroup='DiffText', timeout=300})
   end,
 })
+
+-- ==== Terminal
+vim.api.nvim_create_autocmd('TermOpen', {
+  desc = 'Custom terminal setup',
+  group = vim.api.nvim_create_augroup('custom-term-open', { clear = true }),
+  callback = function()
+    vim.opt.relativenumber = false
+    vim.opt.linebreak = false
+  end,
+})
+
+vim.keymap.set("n", "<space>st", function()
+  vim.cmd.vnew()
+  vim.cmd.term()
+  vim.cmd.wincmd("J")
+  vim.api.nvim_win_set_height(0, 5)
+end)
+
+-- Dir Tree
+vim.keymap.set("n", "<space>dt", function()
+  vim.cmd.vnew()
+  vim.cmd.wincmd("H") --move to far left
+  vim.api.nvim_win_set_width(0, 30)
+  -- vim.cmd("Oil")
+end)
+
+-- Enable lsps
+-- vim.lsp.enable("lua_ls")
 
 ```
 
