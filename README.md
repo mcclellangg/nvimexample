@@ -128,20 +128,19 @@ Here is what this `init.lua` provides.
 **Keymaps**
 
 `<space><space>x` - execute the entire file (normal mode)
+
 `<space>x` - execute the current line (normal mode)
+
 `<space>x` - execute highlighted code (visual mode)
 
-These keymaps are helpful for testing `vim.opt` changes in real time.
-
-Adds UI changes, and an auto command that telegraphs which lines you 'yank' (or copy) by applying a highlight.
-
-I also have some personal keymaps for Oil, terminal, and turning off search highlights.
+These keymaps are helpful for testing `vim.opt` changes in real time. Adds UI changes, and an auto command that telegraphs which lines you 'yank' (or copy) by applying a highlight. I also have some personal keymaps for Oil, terminal, and turning off search highlights.
 
 The Neovim help IS FANTASTIC, be sure to exploit it constantly.
 
 For details execute these commands from within Neovim:
 
 `:h option-list` - provides a brief list of all options
+
 `:h options` - an overview of options
 
 Jump to [23 min mark](https://youtu.be/CuWfgiwI73Q?si=YB5ojO2_JGi6aKna&t=1415) of TJ's video to see a similar `init.lua` in action.
@@ -350,7 +349,9 @@ I recommend watching TJ's video (from his advent of neovim series): [Treesitter 
 
 **Commands**
 `:Inspect` - show items at cursor position in buffer
+
 `:InspectTree` - displays nodes for a given language (if parsers installed)
+
 Press `o` while in "inspect tree" mode to open an interactive query editor
 
 Jump to the [10 minute mark](https://youtu.be/MpnjYb-t12A?si=V2oGjjuMKm38ZRMB&t=610) of TJ's video (same as above) to see these in action.
@@ -430,12 +431,19 @@ Perhaps a better solution might be:
 LSP facilitates POWERFUL features: diagnostics, autocompletion and definitions. Read the help to learn more `:h lsp`! The help is great, use the help! 
 
 **Features enabled**
+
 `ctrl + x ctrl + o` - omnicompletion 
+
 `ctrl + ]` - go to tag/definition
+
 `ctrl + t` - go back
+
 `grr` - go to references
+
 `grn` - rename
+
 `K` - vim.lsp.buf.hover() GREAT info
+
 `ctrl + w D` - open diagnostic buffer
 
 **References**
@@ -546,6 +554,7 @@ What's next:
 Have fun with Neovim and get it to work the way YOU want it to! I hope you found this guide helpful and enjoyable!
 
 Remember [you can just do things](https://www.youtube.com/watch?v=X7HFU786NiQ&list=PLep05UYkc6wTyBe7kPjQFWVXTlhKeQejM&index=26)! 
+
 # Outstanding questions
 
 - Why should I continue to use lazy.nvim plugin manager over `vim.pack`?
