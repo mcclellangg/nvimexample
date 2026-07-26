@@ -67,6 +67,7 @@ vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("v", "<space>x", ":lua<CR>")
 
+-- Personal
 vim.keymap.set("n", "<space>nh", "<cmd>noh<CR>")
 
 -- Basic
@@ -103,14 +104,6 @@ vim.keymap.set("n", "<space>st", function()
   vim.cmd.term()
   vim.cmd.wincmd("J")
   vim.api.nvim_win_set_height(0, 5)
-end)
-
--- Dir Tree
-vim.keymap.set("n", "<space>dt", function()
-  vim.cmd.vnew()
-  vim.cmd.wincmd("H") --move to far left
-  vim.api.nvim_win_set_width(0, 30)
-  -- vim.cmd("Oil")
 end)
 
 -- Enable lsps
