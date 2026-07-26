@@ -2,7 +2,7 @@
 
 These instructions were heavily influenced by [TJ DeVries - Adevent of Neovim](https://www.youtube.com/playlist?list=PLep05UYkc6wTyBe7kPjQFWVXTlhKeQejM) series on YouTube. If you are interested in Neovim want to learn more about it (in depth) I suggest you start by creating your own config, and watching along with his series.
 
-TJ is an excellent teacher and does a great job at breaking down the most important parts of Neovim and to get you started.
+TJ is an excellent teacher and does a great job at breaking down Neovim into more digestable chunks in order to help get you started.
 
 Creating these instructions helped cement my learnings from the series. This config serves as a solid starting point as I experiment with Neovim.
 
